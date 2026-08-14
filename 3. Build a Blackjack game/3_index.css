@@ -24,10 +24,15 @@ text color - #016f32
 width      - 150px
 background - goldenrod
  */
+
+ /* Make sure that the two buttons have some space between
+each other when they are rendered out vertically */
  
 button {
     width: 150px;
 
+    margin-top: 2px;
+    margin-bottom: 2px;
     border: none;
     border-radius: 2px;
     padding-bottom: 5px;
