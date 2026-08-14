@@ -10,3 +10,7 @@
 for (let count = 1; count < 11; count++)  {
     console.log(count)
 }
+
+// starting count at 1
+// keep repeating this loops as long as count is less than 11
+// incrementing by 1
