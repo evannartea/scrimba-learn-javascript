@@ -26,7 +26,7 @@ function renderGame() {
         cardsEl.textContent += `${cards[i]} `
     }
     
-    sumEl.textContent = "Sum: " + sum
+    sumEl.textContent = `Sum: ${sum}`
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
