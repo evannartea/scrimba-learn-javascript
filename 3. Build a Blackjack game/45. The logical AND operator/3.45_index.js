@@ -9,7 +9,7 @@ if (hasCompletedCourse === true) {
 }
 
 // Same as the following:
-if (hasCompletedCourse === true && givesCertificate === true) {
+if (hasCompletedCourse && givesCertificate) {
     generateCertificate()
 }
 
