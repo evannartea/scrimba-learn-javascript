@@ -1,6 +1,6 @@
 // Create a person object that contains three keys: name, age, and country.
 // Use yourself as an example to set the values
-person = {
+let person = {
     name: "Gio",
     age: 26,
     country: "UK"
@@ -10,7 +10,7 @@ person = {
 // string in the following format: 
 // "Per is 35 years old and lives in Norway"
 function logData() {
-    string = `${person.name} is ${person.age} years old and lives in the ${person.country}`
+    let string = `${person.name} is ${person.age} years old and lives in the ${person.country}`
     return string
 }
 
