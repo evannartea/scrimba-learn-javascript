@@ -6,13 +6,9 @@ body {
 }
 
 /*
-
 Style our app according to the provided design!
-
 green color -> #5f9341
-
 */
-
 
 input {
     width: 100%; /* without box-sizing this would be 100% + 10px left + 10px right */
