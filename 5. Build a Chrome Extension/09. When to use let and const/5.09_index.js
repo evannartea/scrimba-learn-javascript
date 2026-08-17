@@ -1,4 +1,4 @@
-// If possible, use const. If not, use let.
+// If possible, use const if var is only assigned once or does not change. If not, use let.
 
 // Which variables below should be changed from let to const?
 
@@ -13,7 +13,7 @@ shippingCost = 15
 shippingTime = "7-14 days"
 
 // Calculating the full price
-let fullPrice = basePrice - discount + shippingCost
+const fullPrice = basePrice - discount + shippingCost
 
 // Finally, notifying the customer
 console.log("Total cost: " + fullPrice + ". It will arrive in " + shippingTime)
