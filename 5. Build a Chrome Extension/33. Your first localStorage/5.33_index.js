@@ -1,18 +1,23 @@
 let myLeads = []
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+const inputEl = document.querySelector("#input-el")
+const inputBtn = document.querySelector("#input-btn")
+const ulEl = document.querySelector("#ul-el")
 
-// 1. Save a key-value pair in localStorage
-// 2. Refresh the page. Get the value and log it to the console
-// 3. Clear localStorage
+// Save a key-value pair in localStorage
+localStorage.setItem("myLeads", "www.example.com")
+
+// Refresh the page. Get the value and log it to the console
+let myLeadsValue = localStorage.getItem("myLeads")
+console.log(myLeadsValue)
+
+// Clear localStorage
+localStorage.clear()
 
 // HINTS:
 // localStorage.setItem(key, value)
 // localStorage.getItem(key)
 // localStorage.clear()
 // PS: both key and value need to be strings
-
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
