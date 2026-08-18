@@ -2,7 +2,7 @@ let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
 const inputEl = document.querySelector("#input-el")
 const inputBtn = document.querySelector("#input-btn")
 // Grab the unordered list and store it in a const variable called ulEl
-
+const ulEl = document.querySelector("#ul-el")
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
