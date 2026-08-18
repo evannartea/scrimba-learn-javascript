@@ -13,9 +13,9 @@ myLeads = JSON.stringify(myLeads)
 console.log(typeof myLeads)
 console.log(myLeads)
 
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+const inputEl = document.querySelector("#input-el")
+const inputBtn = document.querySelector("#input-btn")
+const ulEl = document.querySelector("#ul-el")
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
