@@ -1,9 +1,8 @@
 let myLeads = []
-let oldLeads = []
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
-const deleteBtn = document.getElementById("delete-btn")
+const inputEl = document.querySelector("#input-el")
+const inputBtn = document.querySelector("#input-btn")
+const ulEl = document.querySelector("#ul-el")
+const deleteBtn = document.querySelector("#delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 
 if (leadsFromLocalStorage) {
@@ -11,7 +10,9 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
-// Pass in parameter to function to make it more dynamic
+// Refector the function so that it takes a parameter, leads, that it uses
+// instead of the global myLeads variable. Remember to update all invocations of the function as well.
+
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
@@ -35,6 +36,6 @@ deleteBtn.addEventListener("dblclick", function() {
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
 })
