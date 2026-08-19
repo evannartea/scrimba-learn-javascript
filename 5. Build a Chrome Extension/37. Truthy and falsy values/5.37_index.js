@@ -9,6 +9,7 @@
 // truthy
 // falsy
 
+// falsy values:
 // false
 // 0
 // ""
