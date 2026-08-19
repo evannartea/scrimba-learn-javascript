@@ -15,11 +15,10 @@ const tabs = [
     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
 ]
 
-
 tabBtn.addEventListener("click", function(){
     // Grab the URL of the current tab!
     myLeads.push(tabs[0].url)
-    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
     
 })
