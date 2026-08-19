@@ -17,7 +17,10 @@ const tabs = [
 
 tabBtn.addEventListener("click", function(){
     // Save the url instead of logging it out
-    console.log(tabs[0].url)
+    let linkedInURL = tabs[0].url
+    myLeads.push(linkedInURL)
+    localStorage.setItem("myLeads", JSON.stringify(linkedInURL))
+    render(myLeads)
 })
 
 function render(leads) {
