@@ -4,5 +4,5 @@
 // Delete your code and refresh the page
 
 // Fetch your value from localStorage and log it out
-localStorageValue = localStorage.getItem("key")
+let localStorageValue = localStorage.getItem("key")
 console.log(localStorageValue)
