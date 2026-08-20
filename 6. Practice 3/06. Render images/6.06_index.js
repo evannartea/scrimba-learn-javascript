@@ -14,7 +14,7 @@ function renderImages() {
 
     for (i = 0; i < imgs.length; i++) {
         imgsDom += `
-            <img class="team-img" src="${imgs[i]} alt="Employee in the company">
+            <img class="team-img" src="${imgs[i]}" alt="Employee in the company">
         `
     }
     container.innerHTML = imgsDom
