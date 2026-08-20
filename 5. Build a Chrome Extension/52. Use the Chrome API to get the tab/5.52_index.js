@@ -1,10 +1,10 @@
 let myLeads = []
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
-const deleteBtn = document.getElementById("delete-btn")
+const inputEl = document.querySelector("#input-el")
+const inputBtn = document.querySelector("#input-btn")
+const ulEl = document.querySelector("#ul-el")
+const deleteBtn = document.querySelector("#delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
-const tabBtn = document.getElementById("tab-btn")
+const tabBtn = document.querySelector("#tab-btn")
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
